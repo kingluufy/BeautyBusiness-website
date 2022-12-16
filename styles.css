@@ -1,0 +1,9 @@
+body{
+    color: black;
+    font-size: 32px;
+}
+.top-bar-section ul > li{
+    list-style-type: none;
+    display: inline-block;
+
+}
