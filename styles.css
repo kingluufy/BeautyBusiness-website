@@ -1,20 +1,35 @@
 :root {
-    --pink: #E64398;
+    --pink: #FF007C;
     --light-pink: #F172A1;
     --offwhite: #F0EBF4;
     --purple: #B39BC8;
     --cyan: #A1C3D1;
   }
+  @font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-VariableFont_wght.ttf') format('tff'),
+  }
+  @keyframes changeBg {
+    0% {
+      background-image: url('image1.jpg');
+    }
+    50% {
+      background-image: url('image2.jpg');
+    }
+    100% {
+      background-image: url('image3.jpg');
+    }
+  }
 body{
     font-size: 32px;   
     margin: 0;
     padding: 0;
-    overflow-x: hidden !important; 
+    overflow-x: hidden !important;
+    font-family: 'Raleway', sans-serif; 
 }
 .bg-img {
     /* The image used */
     background-image: url("image1.jpg");
-  
     min-height: 100vh;
   
     /* Center and scale the image nicely */
@@ -24,6 +39,9 @@ body{
   
     /* Needed to position the navbar */
     position: relative;
+    animation-name: changeBg;
+    animation-duration: 8s; /* duration of the animation */
+    animation-iteration-count: infinite; /* repeat the animation indefinitely */
   }
   .container {
     position: absolute;
@@ -32,7 +50,7 @@ body{
   }
   .topnav {
     overflow: hidden;
-    background-color: gray;
+    background-color: rgba(0,0,0,.75)
   }
   .topnav li {
     color: #f2f2f2;
@@ -42,19 +60,32 @@ body{
     font-size: 1.5vw;
     display: inline;
   }
-  .topnav a:hover,a:visited.a:active,a:link {
+  .topnav a:visited, a:active,a:link {
     background-color: transparent;
-    color: black;
+    color: var(--offwhite);
+    text-decoration: none;
+  }
+  .topnav a:hover {
+    background-color: transparent;
+    color: var(--pink);
+    text-decoration: none;
   }
   .name-header{
     padding-top: 12vh;
-    background-color: gray  ;
+    background-color: rgba(0,0,0,.75)
   }
   .location{
-    padding-bottom: 15vh;
+    padding-bottom: 23vh;
+    color: var(--pink);
+    padding-left: 5vw;
   }
-  .Call-us{
-    margin-bottom:;
+  .header-company-title, .subheader, .Call-us{
+    color: var(--pink);
+    padding-left: 5vw;
+    font-family: "Raleway";
+  }
+  .subheader{
+
   }
 /* /* .top-bar-faded{
     z-index: 2;

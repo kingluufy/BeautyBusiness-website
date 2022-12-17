@@ -1,12 +1,12 @@
-var images = document.querySelectorAll('#slider img');
-var current = 0;
+var images = ['image1.jpg', 'image2.jpg', 'image3.jpg'],
+    index  = 0,
+    $top   = $('#top-area');
 
-function slider() {
-  for (var i = 0; i < images.length; i++) {
-    images[i].style.opacity = 0;
-  }
-  current = (current != images.length - 1) ? current + 1 : 0;
-  images[current].style.opacity = 1;
-}
-
-setInterval(slider, 3000);
+setInterval(function() {
+   $top.animate({ opacity: 0 }, 500, function() {
+     $top.css('background-image', 'url('+images[++index]+')');
+     $top.animate({ opacity: 1 }, 500, function() {
+       if(index === images.length) index = 0;
+     });
+   });
+}, 6000);
