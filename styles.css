@@ -1,9 +1,157 @@
+:root {
+    --pink: #E64398;
+    --light-pink: #F172A1;
+    --offwhite: #F0EBF4;
+    --purple: #B39BC8;
+    --cyan: #A1C3D1;
+  }
 body{
-    color: black;
-    font-size: 32px;
+    font-size: 32px;   
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important; 
 }
-.top-bar-section ul > li{
+.bg-img {
+    /* The image used */
+    background-image: url("image1.jpg");
+  
+    min-height: 100vh;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+  }
+  .container {
+    position: absolute;
+    margin: 2vh;
+    width: auto;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: gray;
+  }
+  .topnav li {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 6vh;
+    text-decoration: none;
+    font-size: 1.5vw;
+    display: inline;
+  }
+  .topnav a:hover,a:visited.a:active,a:link {
+    background-color: transparent;
+    color: black;
+  }
+  .name-header{
+    padding-top: 12vh;
+    background-color: gray  ;
+  }
+  .location{
+    padding-bottom: 15vh;
+  }
+  .Call-us{
+    margin-bottom:;
+  }
+/* /* .top-bar-faded{
+    z-index: 2;
+    background-color: none;
+    background: transparent;
+}
+.top-bar-section li{
     list-style-type: none;
     display: inline-block;
+}
+.top-bar-section a:link, a:visited, a:hover, a:active{
+    color: var(--purple);
+    text-decoration: none;
+    padding: 0 2vw 0 2vw;
+}
+.header-company-wrapper {
+    display: block;
+    clear: both;
+    float: left;
+    height: calc(100vh - 255px);
+    position: relative;
+    padding: 25px 50px;
+    width: 100%;
+} 
+.header-company-title {
+    color: var(--light-pink);
+    margin: 27vh 0 0 0;
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 400;
+    letter-spacing: 6px;
+} */
+/* .Call-us {
+    font-family: "Raleway", sans-serif;
+    color: var(--light-pink);
+    font-size: 25px;
+    line-height: 32px;
+    margin: 0 0 32px 0;
+} */
+/* .Call-us a:link, a:visited, a:hover, a:active{
+    color: var(--purple);
+    text-decoration: none;
+} */
+/* .header-content-container {
+    background: rgba(17,17,17,0.5);
+    height: calc(100vh - 80px);
+    max-width: 100%;
+    width: auto;
+    z-index:    2;
+}
+.header-image-container-dark-bg {
+    z-index: 1;
+} */ 
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    background-color: transparent;
+    color: black;
+    z-index: 2;
+}
+
+
+.barlist ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.barlist li{
+    list-style: none;
+}
+
+.barlist li a{
+    text-decoration: none;
+    color: var(--white);
+    padding: 1.8rem;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
 
 }
+.barlist li a:hover{
+    color: var(--hover);
+}
+#slider {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    z-index: 1;
+  }
+  
+#slider img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    object-fit: cover;
+} */
+   
