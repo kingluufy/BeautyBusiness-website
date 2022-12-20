@@ -23,7 +23,6 @@
 body{
     font-size: 32px;   
     margin: 0;
-    padding: 0;
     overflow-x: hidden !important;
     font-family: 'Raleway', sans-serif; 
 }
@@ -47,11 +46,12 @@ body{
     position: absolute;
     margin: 2vh;
     width: auto;
+    height: 95vh;
+    background-color: rgba(0,0,0,.75)
   }
   .topnav {
     overflow: hidden;
-    background-color: rgba(0,0,0,.75)
-  }
+    }
   .topnav li {
     color: #f2f2f2;
     text-align: center;
@@ -72,20 +72,41 @@ body{
   }
   .name-header{
     padding-top: 12vh;
-    background-color: rgba(0,0,0,.75)
-  }
-  .location{
-    padding-bottom: 23vh;
-    color: var(--pink);
-    padding-left: 5vw;
   }
   .header-company-title, .subheader, .Call-us{
     color: var(--pink);
     padding-left: 5vw;
     font-family: "Raleway";
   }
-  .subheader{
-
+  .contact-phone, .Call-us{
+  }
+  .location-header{
+    color: var(--pink);
+    background: black;
+  }
+  .location{
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to right, var(--pink) , var(--purple));
+    margin: 0;
+    padding: 2vh;
+  }
+  .title{
+    display: flexbox;
+    float: right;
+    width: 50vw;
+  }
+  .About-us img{
+    display: flexbox;
+    float: left;
+    width: 50vw;
+  }
+  .About-us{
+    display: block;
+  }
+  .title h1{
+    text-align: center;
+    font-size: 32px;
   }
 /* /* .top-bar-faded{
     z-index: 2;
