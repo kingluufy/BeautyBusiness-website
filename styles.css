@@ -23,6 +23,7 @@
 body{
     font-size: 32px;   
     margin: 0;
+    padding: 0;
     overflow-x: hidden !important;
     font-family: 'Raleway', sans-serif; 
     background-image: linear-gradient(to right, var(--offwhite) , var(--cyan));
@@ -118,7 +119,7 @@ body{
   }
   .services-home{
     background-image: linear-gradient(to right, var(--offwhite) , var(--cyan));
-
+    margin-bottom: 25px;
   }
   .services-title{
     text-align: center;
@@ -138,7 +139,7 @@ body{
   }
   .table-of-services{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     /* margin-right: -15px;
     margin-left: -15px; */
   }
@@ -162,9 +163,15 @@ body{
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.5s;
 }
-a {
-  }
+.henna-column button:hover{
+  background-color: black;
+  color: white;
+}
+
+
   .bridal-column{
     display: block;
     width: 50vh;
@@ -188,6 +195,12 @@ a {
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.5s;    
+  }
+  .bridal-column button:hover{
+    background-color: black;
+  color: white;
   }
   .henna-title{
     font-size: 28px;
@@ -215,6 +228,12 @@ a {
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .hair-column button:hover{
+    background-color: black;
+  color: white;
   }
   .makeup-column{
     display: block;
@@ -239,8 +258,39 @@ a {
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.5s;
   }
-  
+  .makeup-column button:hover{
+    background-color: black;
+  color: white;
+  }
+  .contact-header{
+      text-align: center;
+      color: white;
+      background-image: linear-gradient(to right, var(--pink) , var(--purple));
+      margin: 0;
+      padding: 2vh;
+  }
+  .contact-header a:visited, a:active,a:link {
+    background-color: transparent;
+    color: var(--offwhite);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .contact-header a:hover {
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .footer{
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to right, black , black);
+    margin: 0;
+    padding: 1vh;
+    height: 12vh;
+  }
   
   /* /* .top-bar-faded{
     z-index: 2;
