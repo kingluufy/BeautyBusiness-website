@@ -25,6 +25,7 @@ body{
     margin: 0;
     overflow-x: hidden !important;
     font-family: 'Raleway', sans-serif; 
+    background-image: linear-gradient(to right, var(--offwhite) , var(--cyan));
 }
 .bg-img {
     /* The image used */
@@ -96,19 +97,152 @@ body{
     float: right;
     width: 50vw;
   }
-  .About-us img{
-    display: flexbox;
-    float: left;
-    width: 50vw;
-  }
   .About-us{
     display: block;
+  }
+  .title{
+    margin-top: 25vh;
   }
   .title h1{
     text-align: center;
     font-size: 32px;
   }
-/* /* .top-bar-faded{
+  .title p{
+    font-size: 28px;
+    text-align: center;
+  }
+  .First-para-home{
+    display: flex;
+    gap: 5px;
+    background-image: linear-gradient(to right, var(--offwhite) , var(--cyan));
+  }
+  .services-home{
+    background-image: linear-gradient(to right, var(--offwhite) , var(--cyan));
+
+  }
+  .services-title{
+    text-align: center;
+  }
+  .services-line {
+    width: 50vw;
+    }
+  .outer-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .under-services-title{
+    text-align: center;
+  }
+  .table-of-services{
+    display: flex;
+    justify-content: space-between;
+    /* margin-right: -15px;
+    margin-left: -15px; */
+  }
+  .henna-column{
+    display: block;
+    width: 50vh;
+  }
+  .henna-column p{
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .henna-column img{
+    width: 50vh;
+  }
+  .henna-column button{
+    color: #212529;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+a {
+  }
+  .bridal-column{
+    display: block;
+    width: 50vh;
+  }
+  .bridal-column img{
+    width: 50vh;
+  }
+  .bridal-title{
+    font-size: 28px;
+  }
+  .bridal-column p{
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .bridal-column button{
+    color: #212529;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+  }
+  .henna-title{
+    font-size: 28px;
+  }
+  .hair-column{
+    display: block;
+    width: 50vh;
+  }
+  .hair-column img{
+    width: 50vh;
+  }
+  .hair-column p{
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .hair-title{
+    font-size: 28px;
+  }
+  .hair-column button{
+    color: #212529;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+  }
+  .makeup-column{
+    display: block;
+    width: 50vh;
+  }
+  .makeup-column p{
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .makeup-column img{
+    width: 50vh;
+  }
+  .makeup-title{
+    font-size: 28px;
+  }
+  .makeup-column button{
+    color: #212529;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+  }
+  
+  
+  /* /* .top-bar-faded{
     z-index: 2;
     background-color: none;
     background: transparent;
