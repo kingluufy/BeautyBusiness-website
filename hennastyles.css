@@ -1,0 +1,56 @@
+:root {
+    --pink: #FF007C;
+    --light-pink: #F172A1;
+    --offwhite: #F0EBF4;
+    --purple: #B39BC8;
+    --cyan: #A1C3D1;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-VariableFont_wght.ttf') format('tff'),
+  }
+  body{
+    font-size: 32px;   
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+    font-family: 'Raleway', sans-serif; 
+    background-image: linear-gradient(to right, var(--light-pink) , var(--purple));
+}
+.name-header{
+    background: black;
+    color: var(--pink);
+    padding-left: 25px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.header-company-title{
+    width: 25vw;
+    font-size: 35px;
+}
+.navbar{
+    overflow: hidden;
+}
+.navbar li{
+    display: inline;
+    text-align: center;
+    padding: 6vh;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+.navbar a:visited, a:active,a:link {
+    background-color: transparent;
+    color: var(--offwhite);
+    text-decoration: none;
+  }
+  .navbar a:hover {
+    background-color: transparent;
+    color: var(--pink);
+    text-decoration: none;
+  }
+  .henna-title{
+    text-align: center;
+    color: var(black);
+  }
+  
