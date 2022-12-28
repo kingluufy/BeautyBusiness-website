@@ -7,7 +7,7 @@
   }
   @font-face {
     font-family: 'Raleway';
-    src: url('fonts/Raleway-VariableFont_wght.ttf') format('tff'),
+    src: url('/fonts/Raleway-VariableFont_wght.ttf') format('tff');
   }
   body{
     font-size: 32px;   
@@ -49,8 +49,61 @@
     color: var(--pink);
     text-decoration: none;
   }
-  .henna-title{
+  .title{
     text-align: center;
     color: var(black);
   }
+  .descriptioncontainer{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15vh;
+  }
+  .rightsideimage img{
+    width: 35vw;
+  }
+  .leftsidetext{
+    width: 45vw;
+  }
+  .leftsidetext h1{
+    text-align: center;
+    font-size: 38px;
+  }
+  .leftsidetext p{
+    text-align: left;
+    line-height: 1.5em;
+  }
+
+
+
+
+
+
+
+  .contact-header{
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to right, var(--pink) , var(--purple));
+    margin: 0;
+    padding: 2vh;
+}
+.contact-header a:visited, a:active,a:link {
+  background-color: transparent;
+  color: var(--offwhite);
+  text-decoration: none;
+  cursor: pointer;
+}
+.contact-header a:hover {
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer{
+  text-align: center;
+  color: #636363;
+  font-size: 1.5rem;
+  background-image: linear-gradient(to right, black , black);
+  margin: 0;
+  padding: 1vh;
+  height: 8vh;
+}
   
