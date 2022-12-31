@@ -72,19 +72,34 @@
     text-align: left;
     line-height: 1.5em;
   }
-
-
-
-
-
-
-
-  .contact-header{
+  .contactcontainer{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15vh;
+  }
+  .sociallinks a{
+    display: block;
+    margin-left: 8vh;
+    margin-bottom: 4vh;
+  }
+  .rightsideimage{
+    width: 45vw;
+  }
+  .rightsideimage h1{
     text-align: center;
-    color: white;
-    background-image: linear-gradient(to right, var(--pink) , var(--purple));
-    margin: 0;
-    padding: 2vh;
+  }
+  .rightsideimage iframe{
+    margin-left: 8vh;
+  }
+  
+
+
+.contact-header{
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(to right, var(--pink) , var(--purple));
+  margin: 0;
+  padding: 2vh;
 }
 .contact-header a:visited, a:active,a:link {
   background-color: transparent;
@@ -106,4 +121,3 @@
   padding: 1vh;
   height: 8vh;
 }
-  
